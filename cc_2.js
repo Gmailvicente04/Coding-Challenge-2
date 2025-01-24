@@ -66,3 +66,22 @@ customers.push({ name: "Tom", email: "Tom@example.com", purchaseAmount: 145 });
 
 // Step 3: Log the entire customer list to the console
 console.log("Customer list:", customers);
+
+// Task 5: Object Methods
+// Scenario: Order Processing System
+
+// Step 1: Declare an object with properties: orderId, customerName, and amount
+let order = {
+    orderId: 101,
+    customerName: "Francisca",
+    amount: 790
+};
+
+// Step 2: Add a method calculateTax that returns the tax amount (assume 10% tax rate)
+order.calculateTax = function() {
+    return this.amount * 0.10;
+};
+
+// Step 3: Log the order details and tax amount to the console
+console.log("Order details:", order);
+console.log("Tax amount:", order.calculateTax());
